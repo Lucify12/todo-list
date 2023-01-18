@@ -20,6 +20,7 @@ function createTodo() {
 
         list.appendChild(todo);
         todo.appendChild(closebtn);
+
     }
 }
 // targets the parent of which the button is on and then removes

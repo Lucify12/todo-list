@@ -43,12 +43,11 @@ body {
 }
 
 .todo-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
     gap: 5px;
     padding-top: 30px;
-    align-items: center;
     list-style: none;
 }
 
@@ -58,6 +57,9 @@ body {
     width: 350px;
     padding: 20px 10px;
     overflow-wrap: break-word;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 350ms;
 }
 
 .todo-close {
@@ -66,4 +68,14 @@ body {
     background: none;
     border: none;
     color: red;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
